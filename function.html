@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from>
+        <input type="text"name="firstname"id="firstname">
+        <input type="text"id="lastname">
+        <button onclick="test()">get value</button>
+    </from>
+    <script>
+        function test(){
+            var val=document.getElementById('firstname').value 
+            var lav=document.getElementById('lastname').value 
+            alert("hello"+val+lav);
+        }
+    </script>
+</body>
+</html>

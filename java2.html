@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCRipt>
+        let obj = new Date();
+        let day = obj.getDay();
+        switch(day){
+            case 0:
+             alert("sunday");
+             break;
+             case 1:
+             alert("monday");
+             break;
+             case 2:
+             alert("tuesday");
+
+        }
+        
+    </SCRipt>
+    <h1 id ="txt"></h1>
+    <h2 id ="txt1"></h2>
+    <h3 id ="txt2"></h3>
+    <script>
+        var uid ='something';
+        document.getElementById('txt').innerHTML='javascript id method';
+        document.getElementById('txt1').innerHTML='using the script tag';
+        document.getElementById('txt2').innerHTML=uid;
+        document.getElementById('txt1').style.color='red';
+    </script>
+
+    <script>
+        var students=["dileep","ramesh","ravi","venkata"]
+        document.write(students+"<br>");
+        //students.push("sravan");
+       // document.write(students);
+        //students.unshift("naveen");
+        //document.write(students);
+       // students.pop("sai");
+       // document.write(students);
+       students.shift();
+       document.write(students);
+
+    </script>
+</body>
+</html>

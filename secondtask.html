@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Validation</title>
+  <script>
+    
+    function validatePassword() {
+      const password = document.getElementById('password').value;
+      const firstLetter = password.charAt(0);
+      const specialCharacters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/; 
+      const numbers = /[0-9]/; 
+
+      if (firstLetter !== firstLetter.toUpperCase()) {
+        alert("Password doesn't start with a capital letter") ;
+        document.getElementById('message').innerHTML = 'Password should start with a capital letter.';
+        
+      }
+      else if(firstLetter==firstLetter){
+      document.getElementById('message').innerHTML = " alert= Valid password: ${firstLetter.toUpperCase()}${password.slice(1)}";
+      alert("valid pass");
+    }
+     
+    }
+    
+      
+  </script>
+</head>
+<body>
+  <h2>Password Validation</h2>
+  <form onsubmit="return validatePassword()">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <input type="submit" value="Submit">
+  </form>
+  <p id="message"></p>
+</body>
+</html>
